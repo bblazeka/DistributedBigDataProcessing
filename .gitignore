@@ -61,3 +61,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# target folders
+/hw2/MapReduce1/target/
+/hw2/MRPartitioning/target/
