@@ -65,3 +65,6 @@ $RECYCLE.BIN/
 # target folders
 /hw2/MapReduce1/target/
 /hw2/MRPartitioning/target/
+/lab2/MRFiltering/target/
+/lab2/MRDataProcessing/target/
+/lab2/MRDataSeq/target/
