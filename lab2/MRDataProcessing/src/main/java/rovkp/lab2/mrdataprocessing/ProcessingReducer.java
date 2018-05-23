@@ -17,8 +17,8 @@ public class ProcessingReducer extends Reducer<IntWritable, CellAmount, NullWrit
 
     @Override
     protected void reduce(IntWritable key, Iterable<CellAmount> values, Context context) throws IOException, InterruptedException {
-        double[][] amounts = new double[151][151];
-        int[][] count = new int[151][151];
+        double[][] amounts = new double[152][152];
+        int[][] count = new int[152][152];
 
         for (CellAmount value : values) {
             count[value.getLong()][value.getLat()] += 1;
@@ -28,8 +28,8 @@ public class ProcessingReducer extends Reducer<IntWritable, CellAmount, NullWrit
         // find max
         int iMaxAmount = 0, jMaxAmount = 0, iMaxCount = 0, jMaxCount = 0, maxCount=0;
         double maxAmount=0;
-        for (int i = 1; i < 151; i++){
-            for (int j = 1; j < 151; j++){
+        for (int i = 0; i < 152; i++){
+            for (int j = 0; j < 152; j++){
                 if(amounts[i][j] > maxAmount){
                     maxAmount = amounts[i][j];
                     iMaxAmount = i;
