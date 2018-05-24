@@ -105,7 +105,7 @@ public class CommonMethods {
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                float average = matrix[i][j] + matrix[j][i] / 2;
+                float average = (matrix[i][j] + matrix[j][i]) / 2;
                 matrix[i][j] = average;
                 matrix[j][i] = average;
             }
