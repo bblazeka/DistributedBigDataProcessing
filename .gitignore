@@ -62,6 +62,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# source files
+*.csv
+*.dat
+
 # target folders
 /hw2/MapReduce1/target/
 /hw2/MRPartitioning/target/
@@ -71,3 +75,6 @@ $RECYCLE.BIN/
 /hw3/LuceneTextIndexing/target/
 /hw3/MahoutRecommender/target/
 /lab3/MahoutItemSimilarity/target/
+/hw4/CollectionStreams/target/
+/hw4/SparkBabyNames/target/
+/hw4/SparkStreamProcessing/target/
