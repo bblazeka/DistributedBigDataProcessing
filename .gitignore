@@ -78,3 +78,5 @@ $RECYCLE.BIN/
 /hw4/CollectionStreams/target/
 /hw4/SparkBabyNames/target/
 /hw4/SparkStreamProcessing/target/
+/lab4/CollectionStreamsHandler/target/
+/lab4/SparkMortalityRecords/target/
