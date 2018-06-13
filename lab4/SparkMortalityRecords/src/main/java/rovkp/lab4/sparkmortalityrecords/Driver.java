@@ -69,7 +69,7 @@ public class Driver {
                 // mortality of females[50,65] in weekdays
                 JavaPairRDD<Integer, Long> monthMovement
                         = female5065Mortality(deathRecords);
-                monthMovement.collect().forEach(System.out::println);
+                monthMovement.collect().forEach(k -> System.out.println(k._1+","+k._2));
                 break;
             case 5:
                 // married women percentage, per weekday
@@ -81,7 +81,7 @@ public class Driver {
                         .join(female5065Mortality(deathRecords))
                         .mapToPair(t -> new Tuple2<>(t._1, 1. * t._2._1 / t._2._2));
 
-                married.collect().forEach(System.out::println);
+                married.collect().forEach(k -> System.out.println(k._1+","+k._2));
                 break;
             case 6:
                 // men that died in accidents
